@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PCADL507 Robotics Lab – Viva MCQ Quiz & Answer Key</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1b1f2a;--mu:#667;--bd:#dde1ea;--ac:#3b5bdb;--ok:#2b9348;--okb:#e3f6e8;--no:#d62839;--nob:#fde8ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12141b;--card:#1c1f29;--tx:#e8eaf0;--mu:#9aa;--bd:#2d3140;--ac:#7c93ff;--ok:#5fd37e;--okb:#16301f;--no:#ff6b78;--nob:#3a1a1e}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,Segoe UI,sans-serif}
+.w{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.3rem;margin:8px 0 2px}p.s{color:var(--mu);margin:0 0 14px;font-size:.9rem}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:7px 14px;border-radius:8px}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.sc{margin-left:auto;font-weight:600}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+.q h3{font-size:1rem;margin:0 0 10px;font-weight:600}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 12px}
+.o b{display:inline-block;width:1.6em;color:var(--mu)}
+.o.ok{background:var(--okb);border-color:var(--ok)}.o.no{background:var(--nob);border-color:var(--no)}
+.o:disabled{cursor:default;opacity:1;color:var(--tx)}
+</style></head><body><div class="w">
+<h1>PCADL507 Robotics Lab – Viva MCQ</h1>
+<p class="s">Vimal Jyothi Engineering College · B.Tech Sem 5 · Choose a paper, then practise or view the answer key.</p>
+<div class="bar" id="papers"></div>
+<div class="bar"><button id="m1" class="on">Practice</button><button id="m2">Answer key</button><button id="rs">Reset</button><span class="sc" id="sc"></span></div>
+<div id="list"></div></div>
+<script>
+const P={
+A:["CADBACBDCABDACDBCADBBDCAC",`In the LDR experiment, analogRead(A0) on the Arduino Uno returns a value in the range:~0 to 255~0 to 511~0 to 1023~0 to 4095
+In the LDR code, map(x_constrain, 10, 1000, 0, 255) is used to:~scale the sensor reading to a PWM value for analogWrite()~convert the reading into an angle for a servo~change the baud rate of the Serial Monitor~convert voltage into temperature
+Serial.begin(9600) sets the serial communication speed to:~9600 bytes per second~9600 characters per minute~960 bits per second~9600 bits per second
+Which two lines are used by the I2C bus for data and clock?~MOSI and MISO~SDA and SCL~TX and RX~SCK and SS
+On the Arduino Uno, the hardware I2C lines are available on:~A4 (SDA) and A5 (SCL)~D0 and D1~D10 and D11~A0 and A1
+The I2C address used for the SSD1306 OLED in the lab program (display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) is:~0x68~0x29~0x3C~0x27
+The two signal pins of the HC-SR04 ultrasonic sensor are:~SDA and SCL~TRIG and ECHO~VCC and OUT~DIN and DOUT
+In distance = duration * 0.034 / 2, the division by 2 is needed because:~two sensors are used~the speed of sound halves in air~the Arduino divides microseconds into halves~the sound wave travels to the object and back
+The VL53L1X sensor measures distance using:~time of flight of ultrasonic sound~intensity of ambient light~time of flight of emitted laser (infrared) light~change in magnetic field
+The L293 motor driver module is basically a:~dual H-bridge driver IC~voltage regulator~analog-to-digital converter~stepper-motor encoder
+In forward() of the line follower program, IN1 = HIGH, IN2 = LOW, IN3 = HIGH, IN4 = LOW makes:~both motors rotate in the reverse direction~both motors rotate in the forward direction~left motor forward and right motor reverse~both motors stop
+PID in a PID controller stands for:~Position–Input–Distance~Power–Intensity–Direction~Proportional–Inverse–Differential~Proportional–Integral–Derivative
+Which header file is included to control a servo motor in the Arduino IDE?~Servo.h~Motor.h~Wire.h~DHT.h
+The logic voltage level of Raspberry Pi GPIO pins is:~5 V~12 V~3.3 V~1.8 V
+The main advantage of interrupt-based GPIO over polling is that:~the pin voltage becomes higher~no program is required~the pin becomes 5 V tolerant~the CPU responds to an event without continuously checking the pin
+In encoder-based odometry, the distance travelled by a wheel is computed from:~battery voltage and motor current~ticks counted, ticks per revolution and wheel diameter~IMU temperature only~Wi-Fi signal strength
+By default, OpenCV (cv2.imread) stores colour images in:~RGB channel order~HSV channel order~BGR channel order~CMYK channel order
+In YOLOv8n, the letter 'n' stands for:~nano (the smallest model variant)~normal~network~navigation
+ROS (Robot Operating System) is best described as:~a full desktop operating system~a microcontroller board~a programming language~a middleware framework for developing robot software
+In the ROS 2 publish–subscribe model, a topic is:~a one-time request–response between two nodes~a named channel for one-way, asynchronous data streams~a long-running goal with feedback~a file stored in the workspace
+The command used to build a ROS 2 workspace in the lab is:~make install~colcon build~ros2 compile~catkin_make
+In the publisher program, timer_period = 0.5 s means the node publishes approximately:~0.5 messages per second~5 messages per second~20 messages per second~2 messages per second
+In Turtlesim, the turtle is moved by publishing a Twist message to the topic:~/turtle1/pose~/turtle1/color_sensor~/turtle1/cmd_vel~/rosout
+SLAM stands for:~Simultaneous Localization and Mapping~Sensor Learning and Motion~Sequential Locating and Measuring~Static Localization and Mapping
+Navigation2 (Nav2) uses which pair of costmaps?~RGB costmap and depth costmap~static image and dynamic image~global costmap and local costmap~left costmap and right costmap`],
+B:["BDACDBACBDACDBCABDCAACBDB",`The ADC resolution of the Arduino Uno is:~8 bits~10 bits~12 bits~16 bits
+Which Arduino Uno pin can be used with analogWrite() (PWM), as in the LDR experiment?~D2~D4~D7~D11
+If analogRead() returns 5, what does constrain(x, 10, 1000) return?~10~5~1000~0
+Along with Adafruit_GFX, which library is used to drive the OLED in the lab program?~Servo~Adafruit_MPU6050~Adafruit_SSD1306~DHT
+The DHT11 sensor measures:~light intensity and distance~acceleration and rotation~pressure and altitude~temperature and relative humidity
+In the DHT11 experiment, the DATA pin of the sensor is connected to Arduino pin:~A4~D2~D6~D11
+The factor 0.034 cm/µs used in the ultrasonic distance formula corresponds to a speed of sound of about:~343 m/s~34 m/s~3430 m/s~3 × 10^8 m/s
+In the line follower program, when both IR sensors read LOW, the robot:~stops~turns left~moves forward~turns right
+The VL53L1X Time-of-Flight sensor communicates with the microcontroller through:~an analog voltage on A0~I2C~a PWM signal~Bluetooth
+An H-bridge circuit allows a DC motor to:~generate electricity only~measure its own speed~run without a power supply~rotate in both directions
+The stopRobot() function in the line follower program sets IN1–IN4 to:~all LOW~all HIGH~IN1 and IN3 HIGH, IN2 and IN4 LOW~alternating HIGH and LOW
+In a PID speed control loop for a DC motor, the encoder provides:~the desired speed (setpoint)~the motor supply voltage~feedback of the actual speed~the PWM signal
+In the ultrasonic-sensor-based servo experiment, the servo signal pin is connected to:~D9~D10~A0~D6
+Raspberry Pi is:~an 8-bit microcontroller without an operating system~a single-board computer that runs an operating system such as Linux~a motor driver IC~a type of sensor
+Which command lists the devices detected on I2C bus 1 of a Raspberry Pi?~lsusb~ifconfig~i2cdetect -y 1~ping 1
+Odometry is:~estimating a robot's position from wheel (encoder) motion~measuring ambient light~recognising objects in an image~recording ROS topics
+Converting an image from BGR to HSV is useful because it:~converts the image to grayscale~separates colour (hue) from brightness, making colour thresholding robust~increases the image resolution~removes the need for a camera
+The output of YOLOv8 inference on a camera frame includes:~only a single grayscale image~motor PWM values~LiDAR scan data~bounding boxes, class labels and confidence scores
+The smallest executable unit in ROS 2 is a:~package~workspace~node~topic
+Service communication in ROS 2 follows a:~request–response model~publish–subscribe stream~broadcast-only model~goal–feedback–result model with cancellation
+Python executables of a ROS 2 package are registered through:~console_scripts in setup.py~the launch folder only~package.xml only~setup.cfg only
+The command ros2 run pubsub talker:~starts the subscriber node~builds the workspace~starts the publisher node~deletes the workspace
+The message type used for velocity commands in Turtlesim is:~std_msgs/msg/String~geometry_msgs/msg/Twist~sensor_msgs/msg/LaserScan~turtlesim/msg/Pose
+A map saved after SLAM consists of:~a single MP4 video~CSV and JSON files only~a DB3 bag and a Python script~a PGM image and a YAML metadata file
+Before launching the TurtleBot3 simulation, which environment variable selects the robot variant?~ROS_DOMAIN_ID~TURTLEBOT3_MODEL~PATH~DISPLAY`],
+C:["DBCACDABDCBACABDACBDDACBA",`Which Arduino IDE tool displays the data sent by Serial.print()?~Board Manager~Library Manager~Verify button~Serial Monitor
+Using integer arithmetic, map(500, 0, 1000, 0, 255) returns:~255~127~500~64
+analogWrite(11, 128) produces approximately what duty cycle?~25 %~100 %~50 %~12.8 %
+Which set of lines is used by the SPI protocol?~MOSI, MISO, SCK and chip select~SDA and SCL only~TX and RX only~VCC and GND only
+The MPU6050 used in the gesture-controlled robot is a:~temperature and humidity sensor~ultrasonic ranging sensor~6-axis IMU (3-axis accelerometer + 3-axis gyroscope)~9-axis IMU with a magnetometer
+In the OLED program, display.display() is used to:~clear the screen buffer~set the text size~set the cursor position~transfer the buffer contents to the screen
+To trigger the HC-SR04, the TRIG pin is given:~a 10 µs HIGH pulse~a 10 ms HIGH pulse~a 2 s HIGH pulse~a continuous LOW level
+Which of the following is best suited for detecting a contrasting line on the floor?~DHT11 sensor~IR reflective sensor~Servo motor~OLED display
+Compared with ultrasonic sensors, the VL53L1X ToF sensor is preferred for obstacle detection in AMRs because it offers:~operation only in darkness~operation without any power~measurement of temperature~higher precision with a narrower beam
+The speed of a DC motor driven through an L293 is controlled by:~changing pinMode to INPUT~increasing the baud rate~applying PWM to the enable/input line~adding a delay in setup()
+In a PID controller, the integral term mainly:~predicts the future error~reduces the steady-state error~gives an immediate response proportional to the error~filters sensor noise
+Encoder ticks per revolution together with the tick rate are used to compute:~wheel speed (RPM)~ambient light~humidity~I2C address
+The statement myServo.write(90) in Arduino:~waits for 90 ms~reads the value 90 from a sensor~rotates the servo shaft to 90 degrees~sets the baud rate to 90
+Connecting a 5 V signal directly to a Raspberry Pi GPIO pin may:~damage the Pi because its GPIO operates at 3.3 V~be perfectly safe~double the processing speed~convert the signal to I2C
+Which of the following is a Python library commonly used to control Raspberry Pi GPIO?~Wire.h~RPi.GPIO~turtlesim~SoftwareSerial.h
+A wheel of diameter 10 cm completes 2 revolutions. The distance travelled is approximately:~31.4 cm~20 cm~125.6 cm~62.8 cm
+In OpenCV, cv2.findContours() is used to:~find the outlines of objects in a binary image~capture video from a camera~change the colour space~save results to a CSV file
+YOLOv8n is suitable for a Raspberry Pi because it is:~the most accurate of all variants~able to work without a camera~small and lightweight, requiring less computation~able to run without any model file
+A ROS 2 action is used for:~a single quick request and response~long-running tasks with periodic feedback and cancellation~storing node parameters~compiling source code
+Which command makes the ros2 command available in a new terminal?~sudo apt remove ros~cd ~~rm -rf ros_ws~source /opt/ros/humble/setup.bash
+The ROS 2 LTS distribution and the Ubuntu version used in the lab manual are:~Melodic Morenia on Ubuntu 18.04~Noetic Ninjemys on Ubuntu 20.04~Kinetic Kame on Ubuntu 16.04~Humble Hawksbill on Ubuntu 22.04
+The command ros2 bag record /scan:~records the messages published on the /scan topic~plays back a recorded bag file~launches RViz~builds a package
+Which Turtlesim service is used to create a second turtle?~/kill~/clear~/spawn~/reset
+In RViz, which tool is used to give a destination to the robot in the Nav2 simulation?~Measure~Nav2 Goal (2D Goal Pose)~Interact~Publish Point
+Gazebo is:~a physics-based 3D robot simulator~a text editor~a motor driver chip~a ROS message type`],
+D:["ACBDBADCABCDBDACDBACCBDAD",`Which two settings must be selected in the Arduino IDE before uploading a sketch?~board and COM port~baud rate and library~OLED address and servo angle~ROS distribution and workspace
+The logic voltage level of the Arduino Uno I/O pins is:~3.3 V~12 V~5 V~1.8 V
+In an Arduino sketch, the setup() function runs:~repeatedly forever~once, at power-up or reset~only when serial data arrives~never
+A key difference between I2C and SPI is that:~I2C uses four data lines, whereas SPI uses two~SPI needs device addresses, whereas I2C does not~I2C is always faster than SPI~I2C selects devices by address, whereas SPI uses separate chip-select lines
+The OLED display size declared in the lab program (SCREEN_WIDTH × SCREEN_HEIGHT) is:~16 × 2 characters~128 × 64 pixels~320 × 240 pixels~64 × 32 pixels
+In the gesture-controlled robot program, acceleration from the MPU6050 is measured in:~m/s²~degrees~volts~lux
+In the ultrasonic program, pulseIn(echoPin, HIGH) returns:~the distance in centimetres~the voltage at the echo pin~the number of pulses received~the duration, in microseconds, of the HIGH pulse on the echo pin
+In the line follower program, when the left IR sensor reads HIGH and the right reads LOW, the function called is:~forward()~rightTurn()~leftTurn()~stopRobot()
+If the echo pulse duration is 1000 µs, the distance calculated using duration × 0.034 / 2 is:~17 cm~34 cm~170 cm~1.7 cm
+To reverse the direction of a motor connected to an L293 driver, one should:~reduce the supply voltage~swap the logic levels of its two input pins~change the Serial baud rate~use a larger battery
+The derivative term in a PID controller:~accumulates the past error~is proportional to the present error~responds to the rate of change of error and damps overshoot~sets the PWM frequency
+An Arduino pin should not drive a DC motor directly because:~the pin operates at 230 V~motors need only digital signals~the pin cannot output a HIGH level~the pin can supply only a few tens of mA, which is insufficient
+A hobby servo motor (such as the SG90) is positioned using:~an analog current level~a PWM signal whose pulse width sets the angle~an I2C address~a serial baud rate
+Which Raspberry Pi pins form I2C bus 1?~GPIO14 (TX) and GPIO15 (RX)~GPIO10 and GPIO11~GPIO18 and GPIO19~GPIO2 (SDA) and GPIO3 (SCL)
+In interrupt-based GPIO, edge detection triggers on:~a rising or falling edge of the input signal~a drop in battery voltage~the arrival of a ROS message~saving of a file
+The main cause of drift in wheel odometry is:~too many sensors~high CPU usage~wheel slip and accumulation of errors over time~OLED brightness
+The centroid of a contour in OpenCV is computed using:~the baud rate~a Twist message~an I2C scan~image moments (cx = m10/m00, cy = m01/m00)
+In the OpenCV pipeline, cv2.resize() is used for:~converting the image to HSV~changing the image dimensions to reduce computation~detecting edges~saving data to a CSV file
+Which command lists the active topics in ROS 2?~ros2 topic list~ros2 node info~ros2 pkg create~colcon list
+Running ros2 run py_srvcli client 5 3 with the AddTwoInts service displays the sum as:~15~2~8~53
+Which folder of a ROS 2 workspace contains the final built packages?~build~log~install~src
+In rclpy, the function rclpy.spin(node):~destroys the node~keeps the node running so that its callbacks are processed~builds the package~publishes a message once
+Which tool is used to visualise the graph of nodes and topics?~colcon build~i2cdetect~pinMode~rqt_graph
+In Nav2, the roles of the global and local planners are that:~the global planner plans the overall path to the goal and the local planner follows it while avoiding nearby obstacles~the local planner plans the overall path and the global planner avoids obstacles~both planners are identical~the global planner only controls the motors
+Localization of a robot on a known map loaded from YAML/PGM is typically performed using:~a PID speed loop~HSV thresholding~ros2 bag~AMCL (adaptive Monte Carlo localization)`]};
+let cur="A",mode="p",ans={};
+const L="ABCD",$=id=>document.getElementById(id);
+const Q=k=>P[k][1].split("\n").map((l,i)=>{const s=l.split("~");return{q:s[0],o:s.slice(1),a:L.indexOf(P[k][0][i])}});
+function render(){
+ const qs=Q(cur),a=ans[cur]=ans[cur]||{},key=mode=="k";
+ let sc=0;
+ $("list").innerHTML=qs.map((x,i)=>`<div class="q"><h3>${i+1}. ${x.q}</h3>`+x.o.map((t,j)=>{
+  let c="";const done=key||a[i]!==undefined;
+  if(done&&j==x.a)c="ok";else if(!key&&a[i]==j)c="no";
+  return `<button class="o ${c}" data-i="${i}" data-j="${j}" ${done?"disabled":""}><b>${L[j]}</b>${t}</button>`}).join("")+`</div>`).join("");
+ qs.forEach((x,i)=>{if(a[i]==x.a)sc++});
+ $("sc").textContent=key?"Answer key":`Score: ${sc} / ${Object.keys(a).length} answered (of 25)`;
+ $("papers").innerHTML=Object.keys(P).map(k=>`<button class="${k==cur?"on":""}" data-k="${k}">Paper ${k}</button>`).join("");
+ $("m1").className=key?"":"on";$("m2").className=key?"on":"";
+}
+$("list").onclick=e=>{const b=e.target.closest(".o");if(!b)return;ans[cur][b.dataset.i]=+b.dataset.j;const y=scrollY;render();scrollTo(0,y)};
+$("papers").onclick=e=>{const b=e.target.closest("[data-k]");if(b){cur=b.dataset.k;render();scrollTo(0,0)}};
+$("m1").onclick=()=>{mode="p";render()};$("m2").onclick=()=>{mode="k";render()};
+$("rs").onclick=()=>{ans[cur]={};render()};
+render();
+</script></body></html>
